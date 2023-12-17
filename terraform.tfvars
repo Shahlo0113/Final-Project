@@ -14,16 +14,16 @@ public_subnets_BS = {
 Bastion_Host_ec2 = {
   bastion_host_1 = {
     Bastion_Host_name = "BASTION_HOST_1",
-    subnet_id   = ""
+    subnet_id         = ""
 
   },
-  bastion_host_2= {
+  bastion_host_2 = {
     Bastion_Host_name = "BASTION_HOST_2",
-    subnet_id   = ""
+    subnet_id         = ""
   }
-  }
+}
 
-  security_groups = {
+security_groups = {
   "Final_project_sg" = {
     description = "Security group for web servers"
     ingress_rules = [

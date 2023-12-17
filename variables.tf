@@ -16,8 +16,8 @@ variable "public_subnets_BS" {
 
 variable "Bastion_Host_ec2" {
   type = map(object({
-    server_name = string,
-    subnet_id   = string
+    Bastion_Host_name = string,
+    subnet_id         = string
   }))
   default = {
   }
