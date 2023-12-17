@@ -55,3 +55,10 @@ resource "aws_instance" "Bastion_Host" {
     Name = join("_", [var.prefix, each.key])
   }
 }
+
+module "security-groups" {
+  source          = "app.terraform.io/summercloud/security-groups/aws"
+  version         = "3.0.0"
+  vpc_id          = aws_vpc.vpc.id
+  security_groups = var.security_groups
+}
